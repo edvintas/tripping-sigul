@@ -1,15 +1,9 @@
 ﻿using System;
-using System.ComponentModel.Composition;
-using System.Diagnostics;
-using System.Windows;
-using EnvDTE;
 using Microsoft.VisualStudio.Language.Intellisense;
-using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Text.Editor;
-using Process = System.Diagnostics.Process;
 
-namespace ts.core
+namespace Noname.TrippingSigul.ts.core
 {
     internal class AutobuildIntellisenseController : IIntellisenseController
     {
@@ -33,7 +27,7 @@ namespace ts.core
         {
             if (!_textDocument.IsDirty)
             {
-                ExecuteBuildAction();//
+                ExecuteBuildAction();
             }
         }
 

@@ -5,16 +5,6 @@ VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrippingSigul", "TrippingSigul\TrippingSigul.csproj", "{C83E8B48-8831-4289-A465-B8DDD8E1B76A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrippingSigul_IntegrationTests", "TrippingSigul\TrippingSigul_IntegrationTests\TrippingSigul_IntegrationTests.csproj", "{11E0F964-9329-47D4-9D00-E56CEC668E40}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0687897E-00F0-4290-911F-C99CBFDFFDA1}"
-	ProjectSection(SolutionItems) = preProject
-		IntegrationTests.testsettings = IntegrationTests.testsettings
-		UnitTests.testsettings = UnitTests.testsettings
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrippingSigul_UnitTests", "TrippingSigul\TrippingSigul_UnitTests\TrippingSigul_UnitTests.csproj", "{8E622D48-7A7B-4374-804B-A923614AB948}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,14 +15,7 @@ Global
 		{C83E8B48-8831-4289-A465-B8DDD8E1B76A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C83E8B48-8831-4289-A465-B8DDD8E1B76A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C83E8B48-8831-4289-A465-B8DDD8E1B76A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{11E0F964-9329-47D4-9D00-E56CEC668E40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{11E0F964-9329-47D4-9D00-E56CEC668E40}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{11E0F964-9329-47D4-9D00-E56CEC668E40}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{11E0F964-9329-47D4-9D00-E56CEC668E40}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8E622D48-7A7B-4374-804B-A923614AB948}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8E622D48-7A7B-4374-804B-A923614AB948}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8E622D48-7A7B-4374-804B-A923614AB948}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8E622D48-7A7B-4374-804B-A923614AB948}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C83E8B48-8831-4289-A465-B8DDD8E1B76A}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

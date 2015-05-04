@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.Composition;
 using EnvDTE;
 using Microsoft.VisualStudio.Language.Intellisense;
@@ -8,7 +7,7 @@ using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Text.Editor;
 using Microsoft.VisualStudio.Utilities;
 
-namespace ts.core
+namespace Noname.TrippingSigul.ts.core
 {
     [Export(typeof(IIntellisenseControllerProvider))]
     [Name("Sigul Intellisense Controller")]
@@ -21,12 +20,7 @@ namespace ts.core
         [Import]
         internal SVsServiceProvider ServiceProvider;
 
-        readonly DTE _dte;
-
-        internal AutobuildIntellisenseControllerProvider()
-        {
-            _dte = ServiceProvider.GetService(typeof (DTE)) as DTE;
-        }
+        private DTE _dte;
 
         public IIntellisenseController TryCreateIntellisenseController(ITextView textView, IList<ITextBuffer> subjectBuffers)
         {
@@ -46,6 +40,10 @@ namespace ts.core
 
         public DTE GetDte()
         {
+            if (_dte == null)
+            {
+                _dte = ServiceProvider.GetService(typeof(DTE)) as DTE;
+            }
             return _dte;
         }
     }
